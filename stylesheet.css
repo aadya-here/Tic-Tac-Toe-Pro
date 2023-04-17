@@ -1,0 +1,135 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.bg{
+    background-color: #02223C;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.title{
+    user-select: none;
+    color:#082944 ;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1.1em;
+    text-shadow: 0.1px 0.1px 5px #f7d2e8,0px 0px 17px #f8119f;
+    -webkit-text-stroke: 0.00001em #fc30ae
+}   
+
+.display {
+    color: #66ffdeda;
+    text-align: center;
+    align-content: center;
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+    margin : 0 auto;
+    display : grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width:  360px;
+    max-height: 360px;
+    color: #44E5E7;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tile{
+    border: 2px solid #f7d2e8;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    margin: 10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px #fc30ae;
+    color: #44E5E7;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor : pointer;
+    pointer-events: auto;
+}
+
+.tile:hover{
+    border: 5px double #f7d2e8;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    margin: 7px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 12px #fc30ae;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor : pointer;
+}
+
+.playerX{
+    user-select: none;
+    color: #6cd7fd;
+    text-shadow: 0.1px 0.1px 5px #91daf5,0px 0px 17px #1cb5ec;
+}
+.playerO{
+    user-select: none;
+    color: #d4b6fc;
+    text-shadow: 0.1px 0.1px 5px #dec7fc,0px 0px 17px #b276ff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    align-self: center;
+}
+
+#reset{
+    user-select: none;
+    background-color: transparent;
+    display: flex;
+    color: #ff6ec7;
+    padding: 0.4em 1em;
+    border-radius: 7px;
+    border-color:#f7cae6ec;
+    box-shadow: 0px 0px 15px #f71787e1;
+    font-size: 1em;
+    margin-top: 0.3em;
+    cursor: pointer;
+    align-self: center;
+}
+
+h3 {
+    user-select: none;
+}
+
+p {
+    user-select: none;
+}
+
+@keyframes zoom-out-fade {
+    from {
+        transform: scale(1, 1);
+        opacity: 100%;
+        color: #02223C;
+    } 
+    to {
+        transform: scale(100, 100);
+        opacity: 0%;
+        color: #44E5E7;
+    }
+}
